@@ -13,7 +13,6 @@ function Dinosaur(dino) {
     this.fact = dino.fact;
 }
 
-
 /** 
  * //TODO: Need to refactor this code to get rid of the hard-code part of JSON data.
  * @description The snippet of 'fetch' command
@@ -196,6 +195,11 @@ Dinosaur.prototype = {
     return a;
 }
 
+/**
+ * @param {string} name name of the object 
+ * @param {string} fact fact of the object
+ * @returns returns a div object includes object tile information
+ */
 function createDiv(name, fact){
     let div = document.createElement('div');
     div.className = 'grid-item';
@@ -232,6 +236,11 @@ function getRandomFact(dino, human){
     } 
 }
 
+/**
+ * @param {Object} dino dinosaur object to generate div object
+ * @param {Object} humanData human object to generate div object
+ * @returns div object of dinosaur tile
+ */
 function generateDinoTile(dino, humanData){
     let fact;
     if (dino.species !== "Pigeon"){
@@ -242,6 +251,10 @@ function generateDinoTile(dino, humanData){
     return createDiv(dino.species.toLowerCase(), fact);
 }
 
+/**
+ * @param {Object} humanData human object to generate div object
+ * @returns div object of human tile
+ */
 function generateHumanTile(humanData){
     return createDiv(humanData.name, "");
 }
