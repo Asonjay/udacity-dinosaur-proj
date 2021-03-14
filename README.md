@@ -1,5 +1,9 @@
 # Object Oriented Javascript 
 
+## Credit
+
+This starter code credits to Udacity.com. The code only publish for public when it is under reviewed and graded.
+
 ## Student Instructions
 
 ### Big Picture
