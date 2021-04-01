@@ -214,7 +214,6 @@ function generateHumanTile(humanData){
     // Generate Tiles for each Dino in Array
     // Add Div to DOM
     generateTiles(dinoObjs, humanData);
-
 }
 
 // On button click, prepare and display infographic
